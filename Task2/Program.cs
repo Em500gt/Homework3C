@@ -1,0 +1,16 @@
+﻿using static System.Console;
+Clear();
+Write("Введите координаты A(x): ");
+int ax = Convert.ToInt16(ReadLine());
+Write("Введите координаты A(y): ");
+int ay = Convert.ToInt16(ReadLine());
+Write("Введите координаты A(z): ");
+int az = Convert.ToInt16(ReadLine());
+Write("Введите координаты B(x): ");
+int bx = Convert.ToInt16(ReadLine());
+Write("Введите координаты B(y): ");
+int by = Convert.ToInt16(ReadLine());
+Write("Введите координаты B(z): ");
+int bz = Convert.ToInt16(ReadLine());
+double result = Math.Sqrt(Math.Pow(bx - ax, 2) + Math.Pow(by - ay, 2) + Math.Pow(bz - az, 2));
+WriteLine(Math.Round(result, 2));
